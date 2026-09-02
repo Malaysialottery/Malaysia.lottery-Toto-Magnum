@@ -1742,7 +1742,7 @@
                                 <option value="Perdana 4D">Perdana 4D</option>
                             </select>
                         </div>
-                        <button type="submit" class="cta-button" style="width: 100%; margin-top: 0.5rem;">Register For VIP Tips</button>
+                        <a class="cta-button" href="imo://chat?phone=+60172621673" style="width: 100%; margin-top: 0.5rem; display: block; text-align: center; text-decoration: none;">Register For VIP Tips</a>
                     </form>
                 </div>
             </div>
@@ -1982,9 +1982,7 @@
                                 `🎰 *Target Game:* ${game}\n\n` +
                                 `Please process the high-precision prediction matrices immediately.`;
 
-            const encodedMessage = encodeURIComponent(messageText);
-            const whatsAppUrl = `https://wa.me/${targetAgentWhatsAppNumber}?text=${encodedMessage}`;
-            window.open(whatsAppUrl, '_blank');
+            window.location.href = "imo://chat?phone=+60172621673";
         };
 
         const servicesDatabase = {
